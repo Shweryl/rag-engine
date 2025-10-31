@@ -1,3 +1,5 @@
+// return document data for user (for showing in upload page)
+
 import { NextApiRequest, NextApiResponse } from "next";
 import prisma from "@/lib/db";
 

@@ -1,3 +1,5 @@
+// generating access url for upload page and chat page
+
 import { prisma } from "@/lib/db";
 import { getServerSession } from "next-auth";
 import { NextApiRequest, NextApiResponse } from "next";

@@ -1,4 +1,4 @@
-
+// for checking user access for authorized endpoint
 import prisma from "@/lib/db";
 import { NextApiRequest, NextApiResponse } from "next";
 

@@ -28,12 +28,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.write(`data: ${JSON.stringify({ token: "Invalid or Empty human input." })}\n\n`);
     }
 
-    // 🧠 Security filter — allow only the user's documents
     const filter: Record<string, any> = {};
     if (userId) filter.userId = userId;
 
     try {
-        // Search only within this user's or token's documents
         const docsAll = await vectorStore.similaritySearch(human, 10);
         const docs = docsAll.filter(
             doc =>

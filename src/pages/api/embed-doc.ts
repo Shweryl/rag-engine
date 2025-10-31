@@ -1,3 +1,4 @@
+// document splitting and embedding stage
 
 import { NextApiRequest, NextApiResponse } from "next";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
